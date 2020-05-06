@@ -8,8 +8,8 @@ function showPicture () {
         pictureEl.appendChild(createEmailElement(customer.email))
         pictureEl.appendChild(createStreet(customer.location.street))
         pictureEl.appendChild(createCityStateZip(customer.location.city + " " + customer.location.state + " " + customer.location.postcode))
-        pictureEl.appendChild(createBirthday("DOB: " + customer.dob))
-        pictureEl.appendChild(createRegistered("Customer since: " + customer.registered))
+        pictureEl.appendChild(createBirthday(`DOB: ${moment(customer.dob).format("MMM D, YYYY")}`))
+        pictureEl.appendChild(createRegistered(`Customer since: ${moment(customer.registered).format("MMM D, YYYY")}`))
         targetEl.appendChild(pictureEl)
     }
 }
