@@ -1,0 +1,32 @@
+body {
+    margin: 5em;
+    width: 100%;
+    background-color: bisque;
+}
+
+.container-customers {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+.customer {
+    outline: 2px solid blue;
+    text-align: center;
+    width: 25%;
+    font-size: 1.5vw;
+    height: 40vh;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    justify-content: center;
+}
+
+img {
+    width: 70%;
+    border-radius: 50% 70%;
+    height: 15vh;
+}
